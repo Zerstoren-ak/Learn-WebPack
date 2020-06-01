@@ -113,9 +113,12 @@ module.exports = exports;
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "../node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../img/logo.png */ "./img/logo.png");
 exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, ".container-polygon {\n    clip-path: polygon(100% 50%, 0 0, 52% 25%, 65% 20%);\n    margin: auto;\n    background-color: #ff0000;\n}\nbody {\n    position: relative;\n}\n\nh1 {\n    font-size: 30px;\n    font-weight: bold;\n    color: #000;\n    text-align: center;\n}\n\n.container {\n    height: 300px;\n    width: 300px;\n}\n\n[class^='swiper-button'] {\n    color: #ff0000;\n}\n\n", ""]);
+exports.push([module.i, ".container-polygon {\n    clip-path: polygon(100% 50%, 0 0, 52% 25%, 65% 20%);\n    margin: auto;\n    background-color: #ff0000;\n}\nbody {\n    position: relative;\n}\n\nh1 {\n    font-size: 30px;\n    font-weight: bold;\n    color: #000;\n    text-align: center;\n}\n\n.container {\n    height: 300px;\n    width: 300px;\n}\n\n[class^='swiper-button'] {\n    color: #ff0000;\n}\n\n.logo {\n    margin: auto;\n    height: 100px;\n    width: 100px;\n    background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center/cover;\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -224,6 +227,51 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "../node_modules/css-loader/dist/runtime/getUrl.js":
+/*!*********************************************************!*\
+  !*** ../node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
 
 /***/ }),
 
@@ -9927,6 +9975,19 @@ module.exports = content.locals || {};
 
 /***/ }),
 
+/***/ "./img/logo.png":
+/*!**********************!*\
+  !*** ./img/logo.png ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "38e6826c70817620b5a7d871158ca9a8.png");
+
+/***/ }),
+
 /***/ "./js/analytics.js":
 /*!*************************!*\
   !*** ./js/analytics.js ***!
@@ -9977,7 +10038,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/styles.css */ "./css/styles.css");
 /* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_styles_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _analytics__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./analytics */ "./js/analytics.js");
+/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/logo.png */ "./img/logo.png");
+/* harmony import */ var _analytics__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./analytics */ "./js/analytics.js");
+
 
 
 
@@ -9989,7 +10052,7 @@ _swiper_settings__WEBPACK_IMPORTED_MODULE_1__["addSliderClasses"](Slider, `conta
 const sw = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.container', _swiper_settings__WEBPACK_IMPORTED_MODULE_1__["SWSettings"]);
 
 
-Object(_analytics__WEBPACK_IMPORTED_MODULE_4__["testFunction"])();
+Object(_analytics__WEBPACK_IMPORTED_MODULE_5__["testFunction"])();
 
 
 /***/ }),
@@ -10026,4 +10089,4 @@ function addSliderClasses(node, static_class, special_class) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.7bf992d204d2efa81b4d.js.map
+//# sourceMappingURL=main.bd5a618c539e302e9b22.js.map

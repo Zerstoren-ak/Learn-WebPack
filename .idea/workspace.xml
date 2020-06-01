@@ -2,180 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb01f721-b56f-46de-a96b-83863b98b29f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/grut.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/analytics.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/swiper-settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esparse" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esvalidate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/js-yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/append.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/append/constant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/count.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/help.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/store/constant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/store/false.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/store/true.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/subparsers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action/version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/action_container.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argparse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argument/error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argument/exclusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argument/group.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/argument_parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/const.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/help/added_formatters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/help/formatter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/namespace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/argparse/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caller-callsite/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caller-callsite/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caller-callsite/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caller-callsite/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caller-path/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caller-path/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caller-path/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caller-path/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/callsites/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/callsites/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/callsites/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/callsites/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/dist/cacheWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/dist/createExplorer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/dist/getDirectory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/dist/getPropertyByPath.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/dist/loaders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/dist/readFile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cosmiconfig/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/error-ex/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/error-ex/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/error-ex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/error-ex/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esprima/ChangeLog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esprima/LICENSE.BSD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esprima/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esprima/bin/esparse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esprima/bin/esvalidate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esprima/dist/esprima.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esprima/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-cwd/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-cwd/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-cwd/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-cwd/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-fresh/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-fresh/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-fresh/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-fresh/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-from/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-from/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-from/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/import-from/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/.istanbul.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-arrayish/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-directory/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-directory/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-directory/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-directory/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/bin/js-yaml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/dist/js-yaml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/dist/js-yaml.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/dumper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/exception.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/mark.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/default_full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/default_safe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/failsafe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/schema/json.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/binary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/bool.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/float.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/int.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/js/function.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/js/regexp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/js/undefined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/null.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/omap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/pairs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/seq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/set.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/str.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/lib/js-yaml/type/timestamp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/js-yaml/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/parse-json/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/parse-json/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/parse-json/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/parse-json/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/src/options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-load-config/src/plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-loader/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-loader/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-loader/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-loader/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-loader/src/Error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-loader/src/Warning.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-loader/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-loader/src/options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/postcss-loader/src/options.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/demo/angular.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/src/angular-sprintf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/src/sprintf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sprintf-js/test/test.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.7bf992d204d2efa81b4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.7bf992d204d2efa81b4d.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,13 +61,14 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dist" />
     </key>
   </component>
   <component name="RunManager">

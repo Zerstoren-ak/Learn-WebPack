@@ -23,3 +23,9 @@ h1 {
     color: #ff0000;
 }
 
+.logo {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background: url("../img/logo.png") no-repeat center/cover;
+}
