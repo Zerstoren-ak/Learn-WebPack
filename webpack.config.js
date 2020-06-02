@@ -4,6 +4,20 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebPackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Autoprefixer = require('autoprefixer');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserWebpackPlugin = require('terser-webpack-plugin');
+
+
+
+const optimization = () => {
+    const config = {
+        splitChunks: {
+            chunks: 'all'
+        }
+    };
+    return config;
+};
+
 
 
 module.exports = {
@@ -20,18 +34,14 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[contenthash].js'
+        filename: '[name].[hash].js'
     },
     // watch: false,
     // watchOptions: {
     //     aggregateTimeout: 100
     // },
     devtool: 'source-map',
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
-    },
+    optimization: optimization(),
     devServer: {
         port: 4200
     },
@@ -49,7 +59,7 @@ module.exports = {
             ]
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css'
+            filename: '[name].[hash].css'
         }),
     ],
     module: {
@@ -69,6 +79,11 @@ module.exports = {
             {
                 test: /\.(woff|woff2|ttf)$/,
                 use: ['file-loader']
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             }
         ],
     },
