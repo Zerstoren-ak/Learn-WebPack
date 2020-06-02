@@ -10,7 +10,8 @@ const TerserWebpackPlugin = require('terser-webpack-plugin');
 const DevMode = process.env.NODE_ENV === 'development';
 const ProdMode = !DevMode;
 
-console.log('DevMode: ', DevMode);
+console.log('DevelopmentMode: ', DevMode);
+console.log('ProductionMode: ', ProdMode);
 
 function optimization() {
     const config = {

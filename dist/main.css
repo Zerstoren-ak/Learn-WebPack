@@ -1,5 +1,10 @@
-@import "fonts.css";
-
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(1b0809d519837cb7aad36a73433f655c.ttf) format('truetype');
+}
 body {
     font-family: 'OpenSans', sans-serif;
 }
@@ -39,10 +44,13 @@ h1 {
     border: 2px solid transparent;
     height: 100px;
     width: 100px;
-    background: url("../img/logo.png") no-repeat center/cover;
+    background: url(38e6826c70817620b5a7d871158ca9a8.png) no-repeat center/cover;
 }
 
 .logo.border {
     border-radius: 50%;
     border: 2px solid #9abdff;
 }
+
+
+/*# sourceMappingURL=main.css.map*/
