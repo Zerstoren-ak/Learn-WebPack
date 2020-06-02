@@ -40,7 +40,14 @@ module.exports = {
             template: './index.html'
         }),
         new CleanWebpackPlugin(),
-        // new CopyWebPackPlugin([{}]),
+        new CopyWebPackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'src/favicon/*'),
+                    to: path.resolve(__dirname, 'dist')
+                }
+            ]
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
         }),
@@ -56,7 +63,7 @@ module.exports = {
                 ]
             },
             {
-                test:/\.(jp|pn|sv)g$/,
+                test:/\.(jpg|png|svg|gif)$/,
                 use: ['file-loader']
             },
             {
