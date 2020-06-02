@@ -15,7 +15,6 @@ function analytics (){
 }
 
 window.analytics = analytics();
-console.log(`Вызвать статистику: analytics.getClick()`);
 
 export function testFunction() {
     console.log(`dist_clean_test + watcher_test`);

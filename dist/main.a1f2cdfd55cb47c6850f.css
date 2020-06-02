@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(1b0809d519837cb7aad36a73433f655c.ttf) format('truetype');
+}
+body {
+    font-family: 'OpenSans', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.container-polygon {
+    -webkit-clip-path: polygon(100% 50%, 0 0, 52% 25%, 65% 20%);
+            clip-path: polygon(100% 50%, 0 0, 52% 25%, 65% 20%);
+    margin: auto;
+    background-color: #ff0000;
+    height: 300px;
+}
+
+.swiper-container {
+    width: 300px;
+}
+
+[class^='swiper-button'] {
+    color: #ff0000;
+}
+
+.logo {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    background: url(38e6826c70817620b5a7d871158ca9a8.png) no-repeat center/cover;
+}
+
+.logo.border {
+    border-radius: 50%;
+    border: 2px solid #9abdff;
+}
+
+
+/*# sourceMappingURL=main.a1f2cdfd55cb47c6850f.css.map*/

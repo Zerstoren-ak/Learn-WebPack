@@ -1,10 +1,19 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const {CleanWebpackPlugin} = require(`clean-webpack-plugin`);
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyWebPackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Autoprefixer = require('autoprefixer');
+
 
 module.exports = {
-    context: path.resolve(__dirname, 'src'),
     mode: 'development',
+    context: path.resolve(__dirname, 'src'),
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, 'src')
+        }
+    },
     entry: {
         main: './js/app.js',
         analytics: './js/analytics.js'
@@ -13,23 +22,45 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js'
     },
-    watch: false,
-    watchOptions: {
-        aggregateTimeout: 100
-    },
+    // watch: false,
+    // watchOptions: {
+    //     aggregateTimeout: 100
+    // },
     devtool: 'source-map',
-    plugins: [new HtmlWebpackPlugin({
-        template: `./index.html`
-    }),
-        new CleanWebpackPlugin()],
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    },
+    devServer: {
+        port: 4200
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        }),
+        new CleanWebpackPlugin(),
+        // new CopyWebPackPlugin([{}]),
+        new MiniCssExtractPlugin({
+            filename: '[name].[contenthash].css'
+        }),
+    ],
     module: {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {loader: 'postcss-loader', options: {plugins: [Autoprefixer()]}},
+                ]
             },
             {
-                test:/\.(jpg|png|svg)$/,
+                test:/\.(jp|pn|sv)g$/,
+                use: ['file-loader']
+            },
+            {
+                test: /\.(woff|woff2|ttf)$/,
                 use: ['file-loader']
             }
         ],
