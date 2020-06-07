@@ -3,7 +3,7 @@ import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
 import * as SliderSettings from './swiper-settings';
 import '@/css/styles.css';
-import logo from '@/img/logo.png';
+// import logo from '@/img/logo.png';
 
 //// Swiper set & initialization + import all test (* as)
 const Slider = document.getElementById(`slider`);

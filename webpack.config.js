@@ -115,11 +115,21 @@ module.exports = {
             },
             {
                 test:/\.(jpg|png|svg|gif)$/,
-                use: ['file-loader']
+                exclude: /node_modules/,
+                loader: 'file-loader',
+                options: {
+                    name: fileName('[ext]'),
+                    outputPath: 'img'
+                }
             },
             {
-                test: /\.(woff|woff2|ttf)$/,
-                use: ['file-loader']
+                test: /\.(woff|woff2|eot|ttf)$/,
+                exclude: /node_modules/,
+                loader: 'file-loader',
+                options: {
+                    name: fileName('[ext]'),
+                    outputPath: 'webfonts'
+                }
             },
             {
                 test: /\.js$/,
