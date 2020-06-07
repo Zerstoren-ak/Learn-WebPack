@@ -47,15 +47,25 @@ function fileName(extention) {
 //     return prodPlugin;
 // }
 
-function cssLoaders() {
+function cssLoaders(extra) {
     let currentMode = [
-        MiniCssExtractPlugin.loader,
-        'css-loader'
+        {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+                hmr: DevMode,
+                reloadAll: true
+            }
+        },
+        'css-loader',
     ];
     const productionMode = {loader: 'postcss-loader', options: {plugins: [new Autoprefixer()]}};
     if (ProdMode) {
         currentMode = [...currentMode, productionMode]
     }
+    if (extra) {
+        currentMode.push(extra)
+    }
+
     return currentMode;
 }
 
@@ -102,9 +112,7 @@ module.exports = {
             ]
         }),
         new MiniCssExtractPlugin({
-            filename: fileName('css'),
-            hmr: DevMode,
-            reloadAll: true
+            filename: fileName('css')
         }),
     ],
     module: {
@@ -114,22 +122,58 @@ module.exports = {
                 use: cssLoaders()
             },
             {
+                test: /\.s[ac]ss$/,
+                use: cssLoaders('sass-loader')
+
+            },
+            {
                 test:/\.(jpg|png|svg|gif)$/,
                 exclude: /node_modules/,
-                loader: 'file-loader',
-                options: {
-                    name: fileName('[ext]'),
-                    outputPath: 'img'
-                }
+                use: [
+                    {
+                    loader: 'file-loader',
+                    options: {
+                        name: fileName('[ext]'),
+                        outputPath: 'img'
+                    }
+                    },
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 65
+                            },
+                            // optipng.enabled: false will disable optipng
+                            optipng: {
+                                enabled: false,
+                            },
+                            pngquant: {
+                                quality: [0.65, 0.90],
+                                speed: 4
+                            },
+                            gifsicle: {
+                                interlaced: false,
+                            },
+                            // the webp option will enable WEBP
+                            webp: {
+                                quality: 75
+                            }
+                        }
+                    }
+                ]
             },
             {
                 test: /\.(woff|woff2|eot|ttf)$/,
                 exclude: /node_modules/,
-                loader: 'file-loader',
-                options: {
-                    name: fileName('[ext]'),
-                    outputPath: 'webfonts'
-                }
+                loader: {
+                    loader: 'file-loader',
+                    options: {
+                        name: fileName('[ext]'),
+                        outputPath: 'webfonts'
+                    }
+                },
+
             },
             {
                 test: /\.js$/,

@@ -155,14 +155,16 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./css/styles.css":
-/*!************************!*\
-  !*** ./css/styles.css ***!
-  \************************/
+/***/ "./css/scss.scss":
+/*!***********************!*\
+  !*** ./css/scss.scss ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
+    if(false) { var cssReload; }
+  
 
 /***/ }),
 
@@ -207,34 +209,31 @@ function testFunction() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper */ "../node_modules/swiper/js/swiper.esm.bundle.js");
-/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css/swiper.css */ "../node_modules/swiper/css/swiper.css");
-/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _swiper_settings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./swiper-settings */ "./js/swiper-settings.js");
-/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/css/styles.css */ "./css/styles.css");
-/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_styles_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _analytics__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./analytics */ "./js/analytics.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "../node_modules/swiper/js/swiper.esm.bundle.js");
+/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css/swiper.css */ "../node_modules/swiper/css/swiper.css");
+/* harmony import */ var swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(swiper_css_swiper_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _swiper_settings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./swiper-settings */ "./js/swiper-settings.js");
+/* harmony import */ var _css_scss_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/css/scss.scss */ "./css/scss.scss");
+/* harmony import */ var _css_scss_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_scss_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _analytics__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./analytics */ "./js/analytics.js");
+// import * as $ from 'jquery';
 
 
-
+ // import '@/css/styles.css';
 
  // import logo from '@/img/logo.png';
 //// Swiper set & initialization + import all test (* as)
 
 var Slider = document.getElementById("slider");
-_swiper_settings__WEBPACK_IMPORTED_MODULE_3__["addSliderClasses"](Slider, "container-polygon", "swiper-slide");
-var sw = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"]('.swiper-container', _swiper_settings__WEBPACK_IMPORTED_MODULE_3__["SWSettings"]); ////
+_swiper_settings__WEBPACK_IMPORTED_MODULE_2__["addSliderClasses"](Slider, "container-polygon", "swiper-slide");
+var sw = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-container', _swiper_settings__WEBPACK_IMPORTED_MODULE_2__["SWSettings"]); ////
 ///jQuery test
-
-jquery__WEBPACK_IMPORTED_MODULE_0__('.logo').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0__(this).toggleClass('border');
-}); ////
+// $('.logo').click(function() {$(this).toggleClass('border')});
+////
 ////Single import test
 
 
-Object(_analytics__WEBPACK_IMPORTED_MODULE_5__["testFunction"])(); ////
+Object(_analytics__WEBPACK_IMPORTED_MODULE_4__["testFunction"])(); ////
 
 console.log("\u0412\u044B\u0437\u0432\u0430\u0442\u044C \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0443: analytics.getClick()");
 

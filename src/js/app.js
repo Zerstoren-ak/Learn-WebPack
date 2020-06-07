@@ -1,8 +1,9 @@
-import * as $ from 'jquery';
+// import * as $ from 'jquery';
 import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
 import * as SliderSettings from './swiper-settings';
-import '@/css/styles.css';
+// import '@/css/styles.css';
+import '@/css/scss.scss';
 // import logo from '@/img/logo.png';
 
 //// Swiper set & initialization + import all test (* as)
@@ -12,7 +13,7 @@ const sw = new Swiper('.swiper-container', SliderSettings.SWSettings);
 ////
 
 ///jQuery test
-$('.logo').click(function() {$(this).toggleClass('border')});
+// $('.logo').click(function() {$(this).toggleClass('border')});
 ////
 
 

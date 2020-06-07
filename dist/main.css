@@ -53,5 +53,10 @@ h1 {
 }
 
 
+.test {
+  color: red; }
+  .test p {
+    color: #ff1e1e; }
+
 
 /*# sourceMappingURL=main.css.map*/

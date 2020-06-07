@@ -1,0 +1,10 @@
+@import 'styles.css';
+
+$red: red;
+
+.test {
+  color: $red;
+    & p {
+      color: #ff1e1e;
+    }
+}
